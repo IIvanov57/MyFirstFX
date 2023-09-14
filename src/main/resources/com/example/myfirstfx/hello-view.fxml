@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="539.0" style="-fx-background-color: #9BB5CE;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="inputNumberOne" layoutX="42.0" layoutY="103.0" prefHeight="54.0" prefWidth="91.0" promptText="one" />
+      <TextField fx:id="inputNumberTwo" layoutX="180.0" layoutY="103.0" prefHeight="54.0" prefWidth="91.0" promptText="two" />
+      <ButtonBar layoutX="23.0" layoutY="206.0" prefHeight="84.0" prefWidth="261.0">
+        <buttons>
+          <Button fx:id="increaseButton" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="99.0" text="*" />
+            <Button fx:id="plusButton" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="99.0" text="+" />
+            <Button fx:id="minusButton" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="99.0" text="-" />
+        </buttons>
+      </ButtonBar>
+      <ButtonBar layoutX="23.0" layoutY="284.0" prefHeight="84.0" prefWidth="268.0">
+         <buttons>
+            <Button fx:id="splittingButtom" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="99.0" text="/" />
+            <Button fx:id="degreeButtom" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="99.0" text="x^2" />
+            <Button fx:id="resetButtom" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="99.0" text="C" />
+         </buttons>
+      </ButtonBar>
+      <Label layoutX="473.0" layoutY="406.0" text="by ivanov" textFill="#511414" />
+   </children>
+</AnchorPane>
