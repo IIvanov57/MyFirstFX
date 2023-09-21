@@ -7,7 +7,7 @@ import javafx.scene.control.TextField;
 public class Controller {
 
     @FXML
-    private Button degreeButtom;
+    private Button degreeButton;
 
     @FXML
     private Button increaseButton;
@@ -25,17 +25,59 @@ public class Controller {
     private Button plusButton;
 
     @FXML
-    private Button resetButtom;
+    private Button resetButton;
 
     @FXML
-    private Button splittingButtom;
+    private Button splittingButton;
 
     @FXML
-    void initialize() {
-        increaseButton.setOnAction(event -> {
-            System.out.println("hello");
-        });
+    private TextField outputResult;
 
+    @FXML
+    void actionMinusButton() {
+        System.out.println("interaction minus button");
+        double result = getNumberOne() - getNumberTwo();
+        outputResult.setText(String.valueOf(result));
     }
 
+    double getNumberOne() {
+        if (inputNumberOne.getText().isEmpty()) {
+            return 0;
+        }
+        System.out.println("number1 " + inputNumberOne.getText());
+        return Double.parseDouble(inputNumberOne.getText());
+    }
+
+    double getNumberTwo() {
+        if (inputNumberTwo.getText().isEmpty()) {
+            return 0;
+        }
+        System.out.println("number1 " + inputNumberTwo.getText());
+        return Double.parseDouble(inputNumberTwo.getText());
+    }
+
+    @FXML
+    void actionPlusButton() {
+        System.out.println("interaction Plus");
+    }
+
+    @FXML
+    void actionDegreeButton() {
+        System.out.println("int dgree");
+    }
+
+    @FXML
+    void actionIncreaseButton() {
+        System.out.println("increaseButton");
+    }
+
+    @FXML
+    void actionResetButton() {
+        System.out.println("resetButton");
+    }
+
+    @FXML
+    void actionSplittingButton() {
+        System.out.println("splittingButton");
+    }
 }
