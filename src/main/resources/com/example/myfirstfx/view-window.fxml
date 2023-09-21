@@ -6,34 +6,23 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0"
-            prefWidth="539.0" style="-fx-background-color: #9BB5CE;" xmlns="http://javafx.com/javafx/20.0.1"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myfirstfx.Controller">
-    <TextField fx:id="inputNumberOne" layoutX="42.0" layoutY="103.0" prefHeight="54.0" prefWidth="91.0"
-               promptText="one"/>
-    <TextField fx:id="inputNumberTwo" layoutX="180.0" layoutY="103.0" prefHeight="54.0" prefWidth="91.0"
-               promptText="two"/>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="480.0" style="-fx-background-color: #9BB5CE;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myfirstfx.Controller">
+    <TextField fx:id="inputNumberOne" layoutX="42.0" layoutY="103.0" prefHeight="54.0" prefWidth="91.0" promptText="one" />
+    <TextField fx:id="inputNumberTwo" layoutX="180.0" layoutY="103.0" prefHeight="54.0" prefWidth="91.0" promptText="two" />
     <ButtonBar layoutX="23.0" layoutY="206.0" prefHeight="84.0" prefWidth="261.0">
         <buttons>
-            <Button fx:id="increaseButton" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0"
-                    mnemonicParsing="false" onAction="#actionIncreaseButton" prefHeight="45.0" prefWidth="99.0" text="*"/>
-            <Button fx:id="plusButton" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0"
-                    mnemonicParsing="false" onAction="#actionPlusButton" prefHeight="45.0" prefWidth="99.0" text="+"/>
-            <Button fx:id="minusButton" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0"
-                    mnemonicParsing="false" onAction="#actionMinusButton" prefHeight="46.0" prefWidth="99.0" text="-"/>
+            <Button fx:id="increaseButton" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0" mnemonicParsing="false" onAction="#actionIncreaseButton" prefHeight="45.0" prefWidth="99.0" text="*" />
+            <Button fx:id="plusButton" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0" mnemonicParsing="false" onAction="#actionPlusButton" prefHeight="45.0" prefWidth="99.0" text="+" />
+            <Button fx:id="minusButton" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0" mnemonicParsing="false" onAction="#actionMinusButton" prefHeight="46.0" prefWidth="99.0" text="-" />
         </buttons>
     </ButtonBar>
     <ButtonBar layoutX="23.0" layoutY="284.0" prefHeight="84.0" prefWidth="268.0">
         <buttons>
-            <Button fx:id="splittingButton" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0"
-                    mnemonicParsing="false" onAction="#actionSplittingButton" prefHeight="45.0" prefWidth="99.0" text="/"/>
-            <Button fx:id="degreeButton" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0"
-                    mnemonicParsing="false" onAction="#actionDegreeButton" prefHeight="45.0" prefWidth="99.0" text="x^y"/>
-            <Button fx:id="resetButton" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0"
-                    mnemonicParsing="false" onAction="#actionResetButton" prefHeight="45.0" prefWidth="99.0" text="C"/>
+            <Button fx:id="splittingButton" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0" mnemonicParsing="false" onAction="#actionSplittingButton" prefHeight="45.0" prefWidth="99.0" text="/" />
+            <Button fx:id="degreeButton" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0" mnemonicParsing="false" onAction="#actionDegreeButton" prefHeight="45.0" prefWidth="99.0" text="x^y" />
+            <Button fx:id="resetButton" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0" mnemonicParsing="false" onAction="#actionResetButton" prefHeight="45.0" prefWidth="99.0" text="C" />
         </buttons>
     </ButtonBar>
-    <Label layoutX="473.0" layoutY="406.0" text="by ivanov" textFill="#511414"/>
-    <TextField fx:id="outputResult" layoutX="305.0" layoutY="103.0" prefHeight="54.0" prefWidth="91.0"
-               promptText="result"/>
+    <Label layoutX="408.0" layoutY="348.0" text="by ivanov" textFill="#511414" />
+    <TextField fx:id="outputResult" layoutX="305.0" layoutY="103.0" prefHeight="54.0" prefWidth="91.0" promptText="result" />
 </AnchorPane>
