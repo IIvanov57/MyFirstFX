@@ -95,6 +95,8 @@ public class Controller {
     @FXML
     void actionSplittingButton() {
         System.out.println("splittingButton");
-        outputResult.setText(String.valueOf(getNumberOne() / getNumberTwo()));
+        if(getNumberTwo() != 0){
+            outputResult.setText(String.valueOf(getNumberOne() / getNumberTwo()));
+        } else outputResult.setText("invalid argument");
     }
 }
